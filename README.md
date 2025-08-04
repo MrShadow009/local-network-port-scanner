@@ -1,6 +1,6 @@
 **# local-network-port-scanner**
 Discover open ports and services running on devices in your local network using Nmap. This project demonstrates basic network reconnaissance techniques using Kali Linux for cybersecurity learning and analysis.
-# 🔍 Nmap Network Scanning - Cyber Security Internship Task
+# 🔍 Nmap Network Scanning - Cyber Security
 
 ## 📌 Objective
 Perform basic network reconnaissance using **Nmap** to identify open ports and services on devices within a local or external network.
