@@ -24,10 +24,11 @@ Perform basic network reconnaissance using **Nmap** to identify open ports and s
 | `nmap_task_kali_linux.txt` | Contains all terminal commands, outputs |
 
 ## 📸 Screenshots
-*(Add these before uploading to GitHub)*  
-- Screenshot of each command being executed  
-- Screenshot of scan results
 
+  
+![Open Ports](ss/s1.png)
+
+![Nmap Scan](ss/s2.png)
 ## 📥 How to Run
 ```bash
 # Basic SYN scan
