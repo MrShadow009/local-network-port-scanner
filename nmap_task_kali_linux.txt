@@ -1,0 +1,62 @@
+
+# Nmap Scanning Task - Kali Linux
+
+## 1. SYN Scan on Local Network
+Command:
+nmap -sS 192.168.1.0/24
+
+Expected Output:
+- List of active IPs in the network
+- Open ports on each host
+
+Sample Output:
+Nmap scan report for 192.168.1.1
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+
+## 2. Service Version Detection
+Command:
+nmap -sV scanme.nmap.org
+
+Expected Output:
+- Open ports and the services running
+- Detected versions
+
+Sample Output:
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 6.6.1
+80/tcp  open  http     Apache httpd 2.4.7
+
+## 3. Specific Ports Scan
+Command:
+nmap -p 80,443 scanme.nmap.org
+
+Expected Output:
+- Check if ports 80 and 443 are open
+
+Sample Output:
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+## 4. Full Range Port Scan (1 to 100)
+Command:
+nmap -p 1-100 scanme.nmap.org
+
+Expected Output:
+- Status of each port from 1 to 100
+
+Sample Output:
+PORT   STATE  SERVICE
+22/tcp open   ssh
+80/tcp open   http
+
+## 5. Save Output to File
+Command:
+nmap -sS 192.168.1.0/24 -oN scan_results.txt
+
+Expected Output:
+- Creates a file `scan_results.txt` with scan output
+
+--- END ---
